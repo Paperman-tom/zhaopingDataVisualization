@@ -1,10 +1,18 @@
 $(function () {
-    map();
+    $.ajax({
+        url: "/data/get_city_demand",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            console.log(data);
+            map(data.yData);
+        }
+    });
 
     function map(data) {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('map_1'));
-        var citydata=data;
+        var citydata = data;
         // var data = [
         //     {name: '海门', value: 69},
         //     {name: '鄂尔多斯', value: 12},
@@ -441,7 +449,7 @@ $(function () {
                     coordinateSystem: 'geo',
                     data: convertData(citydata),
                     symbolSize: function (val) {
-                        return val[2] / 15;
+                        return val[2] / 500;
                     },
                     label: {
                         normal: {

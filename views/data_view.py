@@ -19,7 +19,7 @@ def get_jobs_avgSalary():
     dic["yData"] = []
     data = db.session.query(JobsAvgSalary).all()
     # 岗位名称
-    dic["xData"] = ["测试", "产品", "后端开发", "前端开发", "设计", "移动开发", "运维"]
+    dic["xData"] = ["测试", "产品", "后端开发", "前端开发", "设计", "移动开发", "运行维护"]
 
     def build_dic(item):
         dic["yData"].append(item.avgSalary)
@@ -48,7 +48,10 @@ def get_language_proportion():
 
     def build_dic(item):
         dic["xData"].append(item.language)
-        dic["yData"].append((item.count / val) * 100)
+        dic1 = {}
+        dic1["name"] = item.language
+        dic1["value"] = (item.count / val) * 100
+        dic["yData"].append(dic1)
 
     [build_dic(i) for i in data]
 
@@ -100,7 +103,10 @@ def get_city_demand():
 
     def build_dic(item):
         dic["xData"].append(item.city)
-        dic["yData"].append(item.count)
+        dic1 = {}
+        dic1["name"] = item.city
+        dic1["value"] = item.count
+        dic["yData"].append(dic1)
 
     [build_dic(i) for i in data]
 
@@ -166,7 +172,10 @@ def get_experience_demand():
 
     def build_dic(item):
         dic["xData"].append(item.workExperience)
-        dic["yData"].append((item.count / val) * 100)
+        dic1 = {}
+        dic1["name"] = item.workExperience
+        dic1["value"] = (item.count / val) * 100
+        dic["yData"].append(dic1)
 
     [build_dic(i) for i in data]
     return json.dumps(dic)
@@ -190,8 +199,11 @@ def get_education_demand():
     val = sum(a)
 
     def build_dic(item):
+        dic1 = {}
+        dic1["name"] = item.education
+        dic1["value"] = (item.count / val) * 100
         dic["xData"].append(item.education)
-        dic["yData"].append((item.count / val) * 100)
+        dic["yData"].append(dic1)
 
     [build_dic(i) for i in data]
     return json.dumps(dic)

@@ -323,7 +323,7 @@ var citySalary = {
                 // barGap: 1, //柱子之间间距
                 itemStyle: {
                     normal: {
-                        color: '#2f89cf',
+                        color: '#5BF906',
                         opacity: 1,
                         barBorderRadius: 5,
                     }
@@ -632,14 +632,14 @@ var languageNeeds = {
 
             tooltip: {
                 trigger: 'item',
-                formatter: "{a} <br/>{b}: {c} ({d}%)",
+                formatter: "{a} <br/>{b}: {d}%",
                 position: function (p) {   //其中p为当前鼠标的位置
                     return [p[0] + 10, p[1] - 10];
                 }
             },
             legend: {
 
-                top: '70%',
+                top: '90%',
                 itemWidth: 10,
                 itemHeight: 10,
                 data: data.xData,
@@ -654,8 +654,8 @@ var languageNeeds = {
                     name: '语言需求比例',
                     type: 'pie',
                     center: ['50%', '42%'],
-                    radius: ['40%', '60%'],
-                    color: ['#065aab', '#066eab', '#0682ab', '#0696ab', '#06a0ab', '#06b4ab', '#06c8ab', '#06dcab', '#06f0ab'],
+                    radius: ['0', '70%'],
+                    color: ['#187EF0', '#3B89D5', '#FFC300',  '#FF9700',  '#06c8ab', '#5BF906', '#06f0ab'],
                     label: {show: false},
                     labelLine: {show: false},
                     data: data.yData
@@ -807,7 +807,7 @@ var expNeeds = {
                     type: 'pie',
                     center: ['50%', '42%'],
                     radius: ['40%', '60%'],
-                    color: ['#065aab', '#066eab', '#0682ab', '#0696ab', '#06a0ab', '#06b4ab', '#06c8ab', '#06dcab', '#06f0ab'],
+                    color: ['#FFC300', '#FFEC00', '#9C6AD6', '#554DD8', '#06a0ab', '#06b4ab', '#06c8ab', '#06dcab', '#06f0ab'],
                     label: {show: false},
                     labelLine: {show: false},
                     data: data.yData
