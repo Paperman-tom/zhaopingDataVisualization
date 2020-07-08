@@ -221,17 +221,21 @@ def get_company_demand():
     dic["xData"] = []
     # 工作数量
     dic["yData"] = []
-    lst1 = []
     lst2 = []
+    # lst1=[]
     data = db.session.query(Total7companycount).order_by(Total7companycount.count.desc()).all()
+    dic["xData"] = ['腾讯', "字节", "阿里", "青岛青软", "北京三六九", "360", "网易", "深圳捷兴", "金蝶软件", "联龙博通"]
+
+    # dic["yData"]=[3283,2536,653,355,340,252,247,243,233,230]
 
     def build_dic(item):
-        lst1.append(item.cpmpany)
+        # lst1.append(item.company)
         lst2.append(item.count)
 
     [build_dic(i) for i in data]
-    for i in range(15):
-        dic["xData"].append(lst1[i])
+
+    for i in range(10):
+        # dic["xData"].append(lst1[i])
         dic["yData"].append(lst2[i])
 
     return json.dumps(dic)
@@ -256,7 +260,7 @@ def get_enitre_avgSalary():
         a.append(item.salary_sum)
 
         def func(item):
-            dic["yData"].append(int(a[0] / item.count))
+            dic["yData"].append(round((a[0] / item.count), 2))
             dic["zData"].append(item.count)
 
         [func(j) for j in data2]

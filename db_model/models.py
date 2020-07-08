@@ -153,7 +153,7 @@ class Yunweicompanycount(db.Model):
 
 class Total7companycount(db.Model):
     __tablename__ = "total_7_company_count"
-    cpmpany = db.Column(db.TEXT)
+    company = db.Column(db.TEXT)
     count = db.Column(db.BIGINT)
     id = db.Column(db.BIGINT, primary_key=True)
 

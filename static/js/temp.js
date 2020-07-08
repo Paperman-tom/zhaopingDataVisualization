@@ -389,7 +389,7 @@ var coSalary = {
                 },
                 axisLabel: {
                     interval: 0,
-                    rotate:50,
+                    rotate:40,
                     show: true,
                     splitNumber: 15,
                     textStyle: {
@@ -709,14 +709,14 @@ var degreeNeeds = {
             }],
             tooltip: {
                 trigger: 'item',
-                formatter: "{a} <br/>{b}: {c} ({d}%)",
+                formatter: "{a} <br/>{b}: {d}%",
                 position: function (p) {   //其中p为当前鼠标的位置
                     return [p[0] + 10, p[1] - 10];
                 }
             },
             legend: {
 
-                top: '70%',
+                top: '72%',
                 itemWidth: 10,
                 itemHeight: 10,
                 data: data.xData,
@@ -784,14 +784,14 @@ var expNeeds = {
             }],
             tooltip: {
                 trigger: 'item',
-                formatter: "{a} <br/>{b}: {c} ({d}%)",
+                formatter: "{a} <br/>{b}: {d}%",
                 position: function (p) {   //其中p为当前鼠标的位置
                     return [p[0] + 10, p[1] - 10];
                 }
             },
             legend: {
 
-                top: '70%',
+                top: '72%',
                 itemWidth: 10,
                 itemHeight: 10,
                 data: data.xData,
@@ -836,7 +836,7 @@ function get_TotalNum() {
         dataType: "json",
         success: function (data) {
             $("#allNeeds").text(data.zData);
-            $("#allSalary").text(data.yData+'万/年');
+            $("#allSalary").text(data.yData);
         }
     });
 }
