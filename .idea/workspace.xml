@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4448d151-de57-4d83-9c44-295c92b42eda" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -120,7 +121,7 @@
       <workItem from="1593917342607" duration="2269000" />
       <workItem from="1593933244200" duration="31504000" />
       <workItem from="1594098302801" duration="9847000" />
-      <workItem from="1594133139636" duration="6675000" />
+      <workItem from="1594133139636" duration="7277000" />
     </task>
     <task id="LOCAL-00001" summary="7.7demo">
       <created>1594108429533</created>
@@ -150,7 +151,21 @@
       <option name="project" value="LOCAL" />
       <updated>1594192117981</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="增加效果图">
+      <created>1594192398290</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1594192398290</updated>
+    </task>
+    <task id="LOCAL-00006" summary="增加效果图">
+      <created>1594192457986</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1594192457986</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +189,8 @@
     <MESSAGE value="7.8修改地图显示" />
     <MESSAGE value="7.8修改公司标签显示" />
     <MESSAGE value="7.8v1.1completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="7.8v1.1completed" />
+    <MESSAGE value="增加效果图" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加效果图" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/demo$app.coverage" NAME="app Coverage Results" MODIFIED="1594191730418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
