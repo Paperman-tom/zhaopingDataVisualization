@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4448d151-de57-4d83-9c44-295c92b42eda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/mapbase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/chart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/pop_base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/mapbase.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/mapbase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/temp.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/temp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/dataView.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/dataView_static.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/data_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/data_view.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/接口文档.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -130,8 +122,17 @@
       <updated>1593917336838</updated>
       <workItem from="1593917342607" duration="2269000" />
       <workItem from="1593933244200" duration="31504000" />
-      <workItem from="1594098302801" duration="8485000" />
+      <workItem from="1594098302801" duration="9847000" />
+      <workItem from="1594133139636" duration="2316000" />
     </task>
+    <task id="LOCAL-00001" summary="7.7demo">
+      <created>1594108429533</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594108429533</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,23 +143,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/views/dataView_static.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="7.7demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="7.7demo" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/demo$app.coverage" NAME="app Coverage Results" MODIFIED="1594106081191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/demo$app.coverage" NAME="app Coverage Results" MODIFIED="1594175196353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

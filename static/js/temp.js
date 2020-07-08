@@ -233,7 +233,7 @@ var jobSalary = {
 var citySalary = {
     get_data: function () {
         $.ajax({
-            url: "/data/get_citySalary",
+            url: "/data/get_city_avgSalary",
             type: "GET",
             dataType: "json",
             success: function (data) {
@@ -836,7 +836,7 @@ function get_TotalNum() {
         dataType: "json",
         success: function (data) {
             $("#allNeeds").text(data.zData);
-            $("#allSalary").text(data.yData);
+            $("#allSalary").text(data.yData+'万/年');
         }
     });
 }

@@ -449,7 +449,10 @@ $(function () {
                     coordinateSystem: 'geo',
                     data: convertData(citydata),
                     symbolSize: function (val) {
-                        return val[2] / 500;
+                        if (val[2]>10000) return val[2] / 800;
+                        else if (val[2]>5000) return val[2] / 600;
+                        else if (val[2]>3000) return val[2] / 400;
+                        else return val[2] / 200;
                     },
                     label: {
                         normal: {
