@@ -124,6 +124,8 @@ def get_city_avgSalary():
     dic["yData"] = []
     data1 = db.session.query(Total7Salary).order_by(Total7Salary.salary_sum.desc()).all()
     data2 = db.session.query(Total7citycount).all()
+    lst1 = []
+    lst2 = []
 
     def build_dic(item):
         def func(item2):
@@ -131,15 +133,17 @@ def get_city_avgSalary():
                 if item.city is None or item.salary_sum is None:
                     pass
                 else:
-                    dic["xData"].append(item.city)
+                    lst1.append(item.city)
                     a = item.salary_sum / item2.count
-                    dic["yData"].append(a)
+                    lst2.append(a)
             pass
 
         [func(j) for j in data2]
 
     [build_dic(i) for i in data1]
-
+    for i in range(15):
+        dic["xData"].append(lst1[i])
+        dic["yData"].append(lst2[i])
     for i in range(len(dic["yData"])):
         for j in range(len(dic["yData"])):
             if dic["yData"][i] > dic["yData"][j]:
@@ -217,13 +221,18 @@ def get_company_demand():
     dic["xData"] = []
     # 工作数量
     dic["yData"] = []
+    lst1 = []
+    lst2 = []
     data = db.session.query(Total7companycount).order_by(Total7companycount.count.desc()).all()
 
     def build_dic(item):
-        dic["xData"].append(item.cpmpany)
-        dic["yData"].append(item.count)
+        lst1.append(item.cpmpany)
+        lst2.append(item.count)
 
     [build_dic(i) for i in data]
+    for i in range(15):
+        dic["xData"].append(lst1[i])
+        dic["yData"].append(lst2[i])
 
     return json.dumps(dic)
 
@@ -247,7 +256,7 @@ def get_enitre_avgSalary():
         a.append(item.salary_sum)
 
         def func(item):
-            dic["yData"].append(a[0] / item.count)
+            dic["yData"].append(int(a[0] / item.count))
             dic["zData"].append(item.count)
 
         [func(j) for j in data2]

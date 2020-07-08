@@ -389,7 +389,7 @@ var coSalary = {
                 },
                 axisLabel: {
                     interval: 0,
-                    // rotate:50,
+                    rotate:50,
                     show: true,
                     splitNumber: 15,
                     textStyle: {
